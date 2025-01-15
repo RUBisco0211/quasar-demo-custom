@@ -1,0 +1,1 @@
+import{_ as o}from"./Cropper.87dc7607.js";import{j as a,Y as t,q as s,k as r,m as c,s as n}from"./index.7348e296.js";import"./QBtnGroup.f4a8cdc1.js";import"./QSpace.5a1ed5ad.js";const d=a({__name:"CropperPage",setup(p){return(_,m)=>{const e=t("Page");return s(),r(e,{"col-class":"col-lg-8 col-12"},{default:c(()=>[n(o)]),_:1})}}});export{d as default};

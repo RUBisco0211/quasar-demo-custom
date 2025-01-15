@@ -1,1 +1,0 @@
-import{_ as o}from"./plugin-vue_export-helper.21dcd24c.js";import{Y as e,q as s,k as n,m as c,s as r}from"./index.48296d0d.js";const _={};function l(m,p){const t=e("Result"),a=e("Page");return s(),n(a,null,{default:c(()=>[r(t,{type:"empty",label:"No Data Found",caption:"Please add data to the system"})]),_:1})}var u=o(_,[["render",l]]);export{u as default};
