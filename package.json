@@ -13,15 +13,17 @@
         "build": "quasar build"
     },
     "dependencies": {
+        "@kangc/v-md-editor": "^2.3.18",
         "@quasar/extras": "^1.16.4",
         "@vueuse/components": "^11.0.3",
         "@vueuse/core": "^10.11.0",
         "@vueuse/router": "^10.11.1",
         "axios": "^1.2.1",
+        "hljs": "^6.2.3",
         "pinia": "^2.0.11",
         "pinia-plugin-persistedstate": "^3.2.1",
         "quasar": "^2.6.0",
-        "vue": "^3.5.8",
+        "vue": "^3.5.13",
         "vue-cropper": "^1.1.4",
         "vue-draggable-plus": "^0.5.3",
         "vue-echarts": "^7.0.2",

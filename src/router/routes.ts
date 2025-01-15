@@ -4,71 +4,19 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/',
         name: 'root',
-        redirect: { name: 'dashboard' },
+        redirect: { name: 'gallery' },
         component: () => import('layouts/MainLayout.vue'),
         children: [
             {
-                path: 'dashboard',
-                name: 'dashboard',
+                path: 'gallery',
+                name: 'gallery',
                 meta: {
-                    label: 'Dashboard',
-                    icon: 'ri:dashboard-line',
-                    activeIcon: 'ri:dashboard-fill',
+                    label: 'Gallery',
+                    icon: 'ri:gallery-line',
+                    activeIcon: 'ri:gallery-fill',
                     separate: true,
                 },
-                component: () => import('pages/Index.vue'),
-            },
-            {
-                path: 'albums',
-                name: 'albums',
-                meta: {
-                    label: 'Albums',
-                    icon: 'ri:album-line',
-                    activeIcon: 'ri:album-fill',
-                    group: 'Music',
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
-            },
-            {
-                path: 'songs',
-                name: 'songs',
-                meta: {
-                    label: 'Songs',
-                    icon: 'ri:music-2-line',
-                    activeIcon: 'ri:music-2-fill',
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
-            },
-            {
-                path: 'artists',
-                name: 'artists',
-                meta: {
-                    label: 'Artists',
-                    icon: 'ri:group-line',
-                    activeIcon: 'ri:group-fill',
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
-            },
-            {
-                path: 'playlist',
-                name: 'playlist',
-                meta: {
-                    label: 'Playlist',
-                    icon: 'ri:play-list-line',
-                    activeIcon: 'ri:play-list-fill',
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
-            },
-            {
-                path: 'library',
-                name: 'library',
-                meta: {
-                    label: 'Library',
-                    icon: 'ri:folder-music-line',
-                    activeIcon: 'ri:folder-music-fill',
-                    separate: true,
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
+                component: () => import('pages/Gallery.vue'),
             },
             {
                 path: 'typewriter',
@@ -81,37 +29,26 @@ const routes: RouteRecordRaw[] = [
                 },
                 component: () => import('pages/Typewriter.vue'),
             },
+
             {
-                path: 'utils',
-                name: 'utils',
+                path: 'cropper',
+                name: 'cropper',
                 meta: {
-                    label: 'Utils',
-                    icon: 'ri:tools-line',
-                    activeIcon: 'ri:tools-fill',
-                    separate: true,
+                    label: 'Cropper',
+                    icon: 'ri:crop-line',
+                    activeIcon: 'ri:crop-fill',
                 },
-                children: [
-                    {
-                        path: 'cropper',
-                        name: 'cropper',
-                        meta: {
-                            label: 'Cropper',
-                            icon: 'ri:crop-line',
-                            activeIcon: 'ri:crop-fill',
-                        },
-                        component: () => import('pages/CropperPage.vue'),
-                    },
-                    {
-                        path: 'markdown',
-                        name: 'markdown',
-                        meta: {
-                            label: 'Markdown',
-                            icon: 'ri:markdown-line',
-                            activeIcon: 'ri:markdown-fill',
-                        },
-                        component: () => import('pages/common/EmptyPage.vue'),
-                    },
-                ],
+                component: () => import('pages/CropperPage.vue'),
+            },
+            {
+                path: 'markdown',
+                name: 'markdown',
+                meta: {
+                    label: 'Markdown',
+                    icon: 'ri:markdown-line',
+                    activeIcon: 'ri:markdown-fill',
+                },
+                component: () => import('pages/Markdown.vue'),
             },
             {
                 path: 'personal',
@@ -124,7 +61,6 @@ const routes: RouteRecordRaw[] = [
                 },
                 component: () => import('pages/common/EmptyPage.vue'),
             },
-
             {
                 path: 'settings',
                 name: 'settings',
