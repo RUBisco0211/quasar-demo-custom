@@ -1,6 +1,10 @@
 .DS_Store
 .thumbs.db
 node_modules
+.vercel
+.vscode
+.gitignore
+index.html
 
 # Quasar core related directories
 .quasar
@@ -36,6 +40,3 @@ yarn-error.log*
 # local .env files
 .env.local*
 
-.vercel
-
-index.html
