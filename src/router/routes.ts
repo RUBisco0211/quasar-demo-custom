@@ -71,48 +71,6 @@ const routes: RouteRecordRaw[] = [
                 component: () => import('pages/common/EmptyPage.vue'),
             },
             {
-                path: 'pie',
-                name: 'pie',
-                meta: {
-                    label: 'Pie Chart',
-                    icon: 'ri:pie-chart-2-line',
-                    activeIcon: 'ri:pie-chart-2-fill',
-                    group: 'Charts',
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
-            },
-            {
-                path: 'line',
-                name: 'line',
-                meta: {
-                    label: 'Line Chart',
-                    icon: 'ri:line-chart-line',
-                    activeIcon: 'ri:line-chart-fill',
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
-            },
-            {
-                path: 'bar',
-                name: 'bar',
-                meta: {
-                    label: 'Bar Chart',
-                    icon: 'ri:bar-chart-2-line',
-                    activeIcon: 'ri:bar-chart-2-fill',
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
-            },
-            {
-                path: 'bubble',
-                name: 'bubble',
-                meta: {
-                    label: 'Bubble Chart',
-                    icon: 'ri:bubble-chart-line',
-                    activeIcon: 'ri:bubble-chart-fill',
-                    separate: true,
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
-            },
-            {
                 path: 'typewriter',
                 name: 'typewriter',
                 meta: {
@@ -122,16 +80,6 @@ const routes: RouteRecordRaw[] = [
                     group: 'Apps',
                 },
                 component: () => import('pages/Typewriter.vue'),
-            },
-            {
-                path: 'experimental',
-                name: 'experimental',
-                meta: {
-                    label: 'Experimental',
-                    icon: 'ri:test-tube-line rotate-45',
-                    activeIcon: 'ri:test-tube-fill rotate-45',
-                },
-                component: () => import('pages/common/EmptyPage.vue'),
             },
             {
                 path: 'utils',
